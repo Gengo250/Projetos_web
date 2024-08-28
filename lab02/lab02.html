@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Pica-pau</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        ul,
+        ol {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+
+        audio {
+            width: 500px;
+            height: 300px;
+        }
+
+        form,
+        div {
+            text-align: center;
+        }
+
+        /* Adicionando centralização para canvas e svg */
+        .centered {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Site do Pica-pau
+    </h1>
+    <p>
+        Aqui você poderá encontar informações muitos importantes sobre o pica-pau de desenho animado.
+    </p>
+
+    <h2>
+        História do Pica-pau
+    </h2>
+    <p>
+        O pica-pau foi criado por Walte Lanz em 1940, inspirado por um encontro durante sua lua de mel. Desde então, o
+        personagem protagonizou inúmeras trapalhadas e travessuras em mais de 350 desenhos animados.
+    </p>
+
+    <h3>Personagens do Pica-Pau</h3>
+    <div>
+        <ul>
+            <li>Pica-Pau: O protagonista maluco e engraçado.</li>
+            <li>Pé de Pano: O cavalo medroso do Pica-Pau.</li>
+            <li>Leôncio: O leão-marinho co-protagonista.</li>
+            <li>Bruxa: Personagem atormentada pelo Pica-Pau.</li>
+        </ul>
+    </div>
+
+    <h4>Curiosidades sobre Pica-Pau</h4>
+    <p>
+    <ol>
+        <li>Foi desenhado pelo mesmo autor de Pernalonga e Patolino.</li>
+        <li>Teve que mudar de personalidade para se adequar às regras da televisão.</li>
+        <li>Era politicamente incômodo para a sociedade americana devido a suas atitudes.</li>
+        <li>É mundialmente famoso, com estrela na Calçada da Fama de Hollywood.</li>
+        <li>Possui uma risada marcante que virou até música.</li>
+    </ol>
+    </p>
+
+    <h5>Formulário de Contato</h5>
+
+    <form action="/enviar_formulario" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="fruta">Fruta Favorita:</label>
+        <select id="fruta" name="fruta">
+            <option value="maca">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentários Adicionais:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h6>Contato <a href="mailto:picapau@gmail.com">picapau@gmail.com</a></h6>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jzoqj-2bTsU?si=cLs0tYEITgLDmteX"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <audio controls>
+            <source src="https://www.myinstants.com/media/sounds/vine-boom.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+
+    <h2>Gráfico em Canvas</h2>
+    <canvas id="meuCanvas" width="200" height="100" class="centered" style="border:1px solid #000000;"></canvas>
+    <script>
+        var c = document.getElementById("meuCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF0";
+        ctx.fillRect(20, 20, 150, 75);
+    </script>
+
+    <h2>Gráfico SVG</h2>
+    <svg width="100" height="100" class="centered">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="black" />
+    </svg>
+
+</body>
+
+</html>
