@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; /* Espaçamento uniforme entre os vídeos */
+    margin-top: 80px;
+    flex-wrap: wrap; /* Adicionado para permitir quebra de linha se necessário */
+}
+
+.container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoro, .pintura, .terraria, .wuukong {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-bar {
+    font-size: 16px;
+    width: 500px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.search-bar::placeholder {
+    line-height: normal;
+}
+
+.video-title,
+.video-author,
+.video-stats {
+    margin: 5px 0;
+}
+
+.video-title {
+    font-weight: bold;
+}
+
+.video-author {
+    color: gray;
+}
+
+.video-stats {
+    color: gray;
+    font-size: 14px;
+}
+
+.video-details {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.channel-picture {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.profile_picture {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.video-info {
+    flex-grow: 1;
+    width: calc(100% - 60px);
+}
