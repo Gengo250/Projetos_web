@@ -8,3 +8,11 @@ O projeto Lab02 é um site simples que oferece informações sobre o personagem 
 O projeto Lab04 é um site dividido em três temas principais: Natureza, Tecnologia e Espaço. Cada seção possui uma página dedicada, com imagens e informações relevantes para o tema. Desenvolvido em HTML e CSS, o site inclui um modo Dark Mode e navegação entre as páginas. O design é responsivo e visualmente agradável.
 
 O projeto Lab16 consiste em uma calculadora simples, criada utilizando HTML, CSS e JavaScript. A interface permite a execução de operações matemáticas básicas, como adição, subtração, multiplicação e divisão, exibindo os resultados em tempo real. O design é responsivo e moderno, com botões interativos e animações visuais.
+
+O projeto Lab64 teve como objetivo criar um servidor web básico utilizando Node.js. Implementei um servidor que respondia a diversas requisições HTTP e rotas, como a página inicial, uma página "sobre" e uma rota 404 para páginas não encontradas. Além disso, permiti o upload de arquivos através do método POST, garantindo que o servidor enviasse respostas adequadas para cada requisição. A avaliação foi baseada na funcionalidade do servidor, na organização do código e na correta implementação das rotas.
+
+
+
+
+
+
